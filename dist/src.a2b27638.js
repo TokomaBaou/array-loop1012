@@ -177,12 +177,31 @@ module.hot.accept(reloadCSS);
 
 require("./styles.css");
 document.getElementById("app").innerHTML = "\n<h1>Hello Vanilla!</h1>\n<div>\n  We use the same configuration as Parcel to bundle this sandbox, you can find more\n  info about Parcel \n  <a href=\"https://parceljs.org\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.\n</div>\n";
+
+/** ----------------------------------- */
 for (var i = 1; i <= 10; i++) {
   if (i === 5) {
     continue;
   }
   console.log("".concat(i, "\u56DE\u76EE\u306E\u30EB\u30FC\u30D7\u51E6\u7406"));
 }
+// for 文
+//初期設定値、条件式、変化式が必要
+
+/** ----------------------------------- */
+var obj = {
+  CPU: "Core i9",
+  Memory: "16GB",
+  Storage: "256GB"
+};
+for (var _i in obj) {
+  console.log(_i);
+}
+
+// for in 文
+// 初期化やループ条件の記述をしなくても、中身のそれぞれ抽出することができる
+
+/** ----------------------------------- */
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
